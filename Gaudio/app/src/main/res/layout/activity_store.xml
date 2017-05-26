@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_store"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.gaudio.Store">
+
+    <LinearLayout
+        android:id="@+id/menu_store"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/playing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/category_playing"
+            style="@style/category_style"/>
+
+        <TextView
+            android:id="@+id/songs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/category_songs"
+            style="@style/category_style"/>
+
+        <TextView
+            android:id="@+id/playlists"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/category_playlists"
+            style="@style/category_style"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/category_store"
+            style="@style/category_style"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_and_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/header_space">
+
+        <SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:iconifiedByDefault= "false"
+            android:queryHint="@string/search_hint"/>
+
+        <ImageView
+            android:id="@+id/cart_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:layout_gravity="end"
+            style="@style/other_text_style"
+            android:src="@drawable/cart"
+            tools:ignore="ContentDescription"/>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/element_space"
+        android:layout_marginLeft="@dimen/app_margin"
+        android:layout_marginRight="@dimen/app_margin">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/explanation_store"
+                android:layout_marginBottom="@dimen/element_space"
+                style="@style/explanation_style"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/after_search"
+                style="@style/other_text_style"
+                android:layout_marginLeft="@dimen/app_margin"
+                android:layout_marginRight="@dimen/app_margin"/>
+
+            <CheckBox
+                android:id="@+id/result_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="ContentDescription"
+                android:text="@string/result_1"
+                android:drawableLeft="@drawable/audio"
+                android:drawableStart="@drawable/audio"
+                style="@style/element_style"/>
+
+            <CheckBox
+                android:id="@+id/result_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="ContentDescription"
+                android:text="@string/result_2"
+                android:drawableLeft="@drawable/audio"
+                android:drawableStart="@drawable/audio"
+                style="@style/element_style"/>
+
+            <CheckBox
+                android:id="@+id/result_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="ContentDescription"
+                android:text="@string/result_3"
+                android:drawableLeft="@drawable/audio"
+                android:drawableStart="@drawable/audio"
+                style="@style/element_style"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/header_space">
+
+                <Button
+                    android:id="@+id/add_to_cart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/add_button"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/white"
+                    style="android:attr/buttonBarButtonStyle"/>
+
+                <Button
+                    android:id="@+id/delete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/delete"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/white"
+                    style="android:attr/buttonBarButtonStyle"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/pay"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/white"
+                    style="android:attr/buttonBarButtonStyle"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

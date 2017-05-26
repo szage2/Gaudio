@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">Gaudio</string>
+
+    <string name="category_playing">Playing</string>
+
+    <string name="category_songs">Songs</string>
+
+    <string name="category_playlists">Playlists</string>
+
+    <string name="category_store">Store</string>
+
+    <string name="Artist">Artist</string>
+
+    <string name="Track">Track</string>
+
+    <string name="title_activity_store">Store</string>
+
+    <string name="song_1">Song 1</string>
+
+    <string name="song_2">Song 2</string>
+
+    <string name="song_3">Song 3</string>
+
+    <string name="song_4">Song 4</string>
+
+    <string name="song_5">Song 5</string>
+
+    <string name="song_6">Song 6</string>
+
+    <string name="song_7">Song 7</string>
+
+    <string name="song_8">Song 8</string>
+
+    <string name="song_9">Song 9</string>
+
+    <string name="song_10">Song 10</string>
+
+    <string name="playlist_1">Playlist_ 1</string>
+
+    <string name="playlist__2">Playlist 2</string>
+
+    <string name="playlist__3">Playlist 3</string>
+
+    <string name="playlist__4">Playlist 4</string>
+
+    <string name="playlist__5">Playlist 5</string>
+
+    <string name="search_hint">Search song / artist / playlist</string>
+
+    <string name="add_button">Add to cart</string>
+
+    <string name="delete">Delete</string>
+
+    <string name="pay">Pay now</string>
+
+    <string name="explanation_store">User can search for music to purchase. I should apply intent INTENT_ACTION_MEDIA_SEARCH. Pay now button should launch PaymentActivity. I should integrate Paypal android SDK (downloadable) and  PayPal Wallet App. </string>
+
+    <string name="explanation_playlist">Shows details of all playlist on the device. I should apply class ContentResolver to retrieve playlists, intent Audio.Playlists.ENTRY_CONTENT_TYPE to play a playlist. </string>
+
+    <string name="explanation_songs">Shows list of songs (with details) stored on the device. I should apply class ContentResolver to retrieve tracks, intent ACTION_VIEW Data URI Scheme and "audio/*" to play it. </string>
+
+    <string name="explanation_play">User can play music from the database of the device. Skip song or go back to previous one, mark favorite, and shuffle playlist. To play music I should use MediaPlayer and AudioManager/MediaController Classes.</string>
+
+    <string name="after_search">Search results:</string>
+
+    <string name="result_1">Result 1, cost: $3</string>
+
+    <string name="result_2">Result 2, cost: $3</string>
+
+    <string name="result_3">Result 3, cost: $3</string>
+
+
+</resources>
